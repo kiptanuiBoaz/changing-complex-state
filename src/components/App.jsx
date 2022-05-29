@@ -47,10 +47,10 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Hello {fullName.fName} &nbsp;{fullName.lName} </h1>
+      <h1> Hello {fullName.fName} {fullName.lName}</h1>
       <form>
-        <input value = {fullName}  onChange = {  handleChange} name="fName" placeholder="First Name" />
-        <input value = {fullName}  onChange = {  handleChange} name="lName" placeholder="Last Name" />
+        <input value = {fullName.fName}  onChange = { handleChange} name="fName" placeholder="First Name" />
+        <input value = {fullName.lName}  onChange = { handleChange} name="lName" placeholder="Last Name" />
         <button>Submit</button>
       </form>
     </div>
