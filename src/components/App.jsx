@@ -21,13 +21,13 @@ function App() {
       if(name === "fName"){
         return({
           fName:value,
-          lName:prevValue.fName
+          lName:prevValue.lName
         })
       }
       else if(name === "lName"){
         return(
          {
-          fName:prevValue.lName,
+          fName:prevValue.fName,
           lName:value
          }
         )
